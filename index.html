@@ -1,18 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AONGAN - Natural Beeswax Bread Bags</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f9f7f4;color:#333;text-align:center;padding:50px 20px}
-h1{color:#8b6e4e;font-size:36px;margin-bottom:20px}
-p{font-size:18px;max-width:600px;margin:0 auto 30px}
-a{color:#8b6e4e;font-weight:bold}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AONGAN - Natural Beeswax Bread Bags</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Roboto, sans-serif; }
+        body { background-color: #f9f7f4; color: #333; line-height: 1.6; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5rem; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .navbar .logo { font-size: 1.8rem; font-weight: bold; color: #8b6e4e; text-decoration: none; }
+        .navbar ul { display: flex; list-style: none; gap: 2rem; }
+        .navbar a { color: #555; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .navbar a:hover { color: #8b6e4e; }
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: url('assets/bg.jpg') no-repeat center center; background-size: cover; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; }
+        .btn { padding: 0.8rem 2rem; background-color: #8b6e4e; color: #fff; border: none; border-radius: 4px; font-size: 1rem; font-weight: 500; text-decoration: none; transition: background-color 0.3s; }
+        .btn:hover { background-color: #735a3d; }
+        .btn-secondary { background-color: transparent; border: 2px solid #fff; margin-left: 1rem; }
+        .btn-secondary:hover { background-color: rgba(255,255,255,0.2); }
+        footer { background-color: #333; color: #fff; text-align: center; padding: 2rem; margin-top: 3rem; }
+        .social { margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem; }
+        .social a { color: #fff; font-size: 1.2rem; text-decoration: none; }
+    </style>
 </head>
 <body>
-<h1>Welcome to AONGAN</h1>
-<p>Natural Beeswax Bread Bags | Eco-Friendly | Sustainable Living</p>
-<p>Your official website is now LIVE!</p>
+    <nav class="navbar">
+        <a href="index.html" class="logo">AONGAN</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="guide.html">Baking Guide</a></li>
+            <li><a href="#">Follow Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>AONGAN · Natural Beeswax, Fresh Bread, Eco Life</h1>
+        <p>Our reusable beeswax bread bags keep your homemade bread fresh, crispy and healthy—made with 100% natural materials, kind to the earth and your family.</p>
+        <div>
+            <a href="products.html" class="btn">Explore Our Products</a>
+            <a href="guide.html" class="btn btn-secondary">Download Baking Guide</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Follow Us: Instagram @AONGAN_Official | TikTok @AONGAN_Official</p>
+        <p>Customer Service: support@aongan.com</p>
+        <p>Copyright © 2024 AONGAN. All Rights Reserved. Made with ♡ for eco-friendly living.</p>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+        </div>
+    </footer>
 </body>
 </html>
