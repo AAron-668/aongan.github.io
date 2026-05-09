@@ -6,20 +6,47 @@
 <title>About AONGAN - Natural Eco-Friendly Kitchen</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f9f7f4;color:#333;line-height:1.7}
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:1rem 5%;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.05)}
+body{background:#f9f7f4;color:#333;line-height:1.8}
+
+/* 导航栏 */
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:1rem 5%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.08);position:sticky;top:0;z-index:99}
 .logo{font-size:1.8rem;font-weight:bold;color:#8b6e4e;text-decoration:none}
-.nav-links{display:flex;list-style:none;gap:2rem}
-.nav-links a{color:#555;text-decoration:none;font-weight:500}
-.nav-links a:hover,.nav-links a.active{color:#8b6e4e}
-.container{max-width:900px;margin:4rem auto;padding:0 2rem}
-h2{font-size:2.2rem;color:#8b6e4e;margin-bottom:2rem;text-align:center}
-.box{background:#fff;padding:2.5rem;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,0.06)}
-p{margin-bottom:1.2rem;font-size:1.05rem}
+.nav-links{display:flex;list-style:none;gap:2.2rem}
+.nav-links a{color:#555;text-decoration:none;font-weight:500;font-size:1rem}
+.nav-links a.active,.nav-links a:hover{color:#8b6e4e}
+
+/* 头部大图Banner */
+.about-banner{width:100%;height:380px;background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
+url('https://images.unsplash.com/photo-1550583748-b5abbc65ab41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}
+.about-banner h1{font-size:2.8rem;margin-bottom:0.5rem;text-shadow:0 2px 6px rgba(0,0,0,0.3)}
+.about-banner p{font-size:1.1rem;opacity:0.95}
+
+/* 主体容器 */
+.container{max-width:1100px;margin:4rem auto;padding:0 2rem}
+
+/* 图文区块 */
+.about-row{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;background:#fff;padding:2.5rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.06);margin-bottom:3rem}
+.about-row:nth-child(2){direction:rtl}
+.about-row:nth-child(2) .text-wrap{direction:ltr}
+
+.img-wrap img{width:100%;border-radius:8px;object-fit:cover}
+.text-wrap h2{font-size:1.8rem;color:#8b6e4e;margin-bottom:1.2rem}
+.text-wrap p{font-size:1.05rem;color:#555;margin-bottom:1rem}
+
+/* 理念板块 */
+.idea-section{background:#fff;padding:3rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.06);text-align:center;margin-bottom:3rem}
+.idea-section h2{font-size:2rem;color:#8b6e4e;margin-bottom:1.5rem}
+.idea-section p{max-width:800px;margin:0 auto 1rem;font-size:1.05rem;color:#555}
+
+/* 页脚 */
 footer{background:#333;color:#fff;text-align:center;padding:2rem;margin-top:4rem}
+footer p{margin-bottom:0.5rem;opacity:0.9}
 </style>
 </head>
 <body>
+
+<!-- 导航 -->
 <nav class="navbar">
   <a href="index.html" class="logo">AONGAN</a>
   <ul class="nav-links">
@@ -30,19 +57,55 @@ footer{background:#333;color:#fff;text-align:center;padding:2rem;margin-top:4rem
   </ul>
 </nav>
 
+<!-- 顶部大图横幅 -->
+<section class="about-banner">
+  <div>
+    <h1>About AONGAN</h1>
+    <p>Nature · Health · Eco-Friendly Living</p>
+  </div>
+</section>
+
 <div class="container">
-  <h2>About AONGAN</h2>
-  <div class="box">
-    <p>AONGAN is dedicated to providing natural, reusable, and eco-friendly kitchen supplies for baking lovers and families who pursue a healthy lifestyle.</p>
-    <p>We focus on beeswax food storage solutions, replacing disposable plastic bags with safe, breathable, and long-lasting beeswax bread bags.</p>
-    <p>All our products are made of pure natural beeswax, organic cotton and jojoba oil, without any harmful chemicals. Safe for bread, fruit and daily food storage.</p>
-    <p>Our mission is simple: Protect your food freshness, protect your family health, and protect our planet from plastic waste.</p>
+  <!-- 第一块 品牌故事 图文左右 -->
+  <div class="about-row">
+    <div class="img-wrap">
+      <img src="https://images.unsplash.com/photo-1602523961358-f5f093a445b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Natural Beeswax">
+    </div>
+    <div class="text-wrap">
+      <h2>Our Story</h2>
+      <p>AONGAN was born from a simple idea: to create safe, natural and reusable food storage tools for every family who loves homemade baking.</p>
+      <p>We are deeply aware of the harm caused by disposable plastic bags to human health and the environment. So we focus on developing premium beeswax bread bags as a perfect plastic-free alternative.</p>
+      <p>From material selection to handmade craft, we stick to high standards to bring healthy and eco-friendly daily necessities to global users.</p>
+    </div>
+  </div>
+
+  <!-- 第二块 原料优势 图文左右反转 -->
+  <div class="about-row">
+    <div class="img-wrap">
+      <img src="https://images.unsplash.com/photo-1589987965490-6fcc5232b450?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Pure Natural Material">
+    </div>
+    <div class="text-wrap">
+      <h2>Pure Natural Material</h2>
+      <p>We only use pure natural beeswax, organic cotton fabric and jojoba oil, without any synthetic chemical additives.</p>
+      <p>The material is safe enough to directly contact bread, fruits and other foods, breathable and fresh-keeping, allowing you to taste the original flavor of food.</p>
+      <p>Every AONGAN beeswax bag is carefully made to balance beauty, practicability and environmental protection.</p>
+    </div>
+  </div>
+
+  <!-- 品牌理念板块 -->
+  <div class="idea-section">
+    <h2>Our Mission & Vision</h2>
+    <p>We hope to let more families stay away from disposable plastic and embrace a low-carbon, green and healthy lifestyle.</p>
+    <p>Not only providing high-quality beeswax bread bags, but also spreading the concept of environmental protection and healthy life to every corner of the world.</p>
+    <p>Choose AONGAN, choose nature, choose a better life for you and the planet.</p>
   </div>
 </div>
 
+<!-- 页脚 -->
 <footer>
   <p>Copyright © AONGAN | All Rights Reserved</p>
-  <p>support@aongan.com</p>
+  <p>Customer Service: support@aongan.com</p>
 </footer>
+
 </body>
 </html>
