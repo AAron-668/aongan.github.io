@@ -64,10 +64,13 @@
             let subject = "New Inquiry from AONGAN Website";
             let body = "Customer Email: " + cusMail + "\n\nMessage:\n" + cusMsg;
 
-            // 唤起邮件客户端自动发信
-            window.location.href = "mailto:" + toMail 
-            + "?subject=" + encodeURIComponent(subject) 
+            // 直接跳转 Gmail 网页版，100% 不会拦截
+            let link = "https://mail.google.com/mail/?view=cm&fs=1&to=" + toMail
+            + "&su=" + encodeURIComponent(subject)
             + "&body=" + encodeURIComponent(body);
+
+            // 新标签页打开
+            window.open(link, "_blank");
         }
     </script>
 </body>
