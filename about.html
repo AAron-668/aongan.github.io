@@ -1,111 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About AONGAN - Natural Eco-Friendly Kitchen</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f9f7f4;color:#333;line-height:1.8}
-
-/* 导航栏 */
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:1rem 5%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.08);position:sticky;top:0;z-index:99}
-.logo{font-size:1.8rem;font-weight:bold;color:#8b6e4e;text-decoration:none}
-.nav-links{display:flex;list-style:none;gap:2.2rem}
-.nav-links a{color:#555;text-decoration:none;font-weight:500;font-size:1rem}
-.nav-links a.active,.nav-links a:hover{color:#8b6e4e}
-
-/* 头部大图Banner */
-.about-banner{width:100%;height:380px;background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),
-url('https://images.unsplash.com/photo-1550583748-b5abbc65ab41?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
-display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}
-.about-banner h1{font-size:2.8rem;margin-bottom:0.5rem;text-shadow:0 2px 6px rgba(0,0,0,0.3)}
-.about-banner p{font-size:1.1rem;opacity:0.95}
-
-/* 主体容器 */
-.container{max-width:1100px;margin:4rem auto;padding:0 2rem}
-
-/* 图文区块 */
-.about-row{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;background:#fff;padding:2.5rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.06);margin-bottom:3rem}
-.about-row:nth-child(2){direction:rtl}
-.about-row:nth-child(2) .text-wrap{direction:ltr}
-
-.img-wrap img{width:100%;border-radius:8px;object-fit:cover}
-.text-wrap h2{font-size:1.8rem;color:#8b6e4e;margin-bottom:1.2rem}
-.text-wrap p{font-size:1.05rem;color:#555;margin-bottom:1rem}
-
-/* 理念板块 */
-.idea-section{background:#fff;padding:3rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.06);text-align:center;margin-bottom:3rem}
-.idea-section h2{font-size:2rem;color:#8b6e4e;margin-bottom:1.5rem}
-.idea-section p{max-width:800px;margin:0 auto 1rem;font-size:1.05rem;color:#555}
-
-/* 页脚 */
-footer{background:#333;color:#fff;text-align:center;padding:2rem;margin-top:4rem}
-footer p{margin-bottom:0.5rem;opacity:0.9}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | AONGAN</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+        body{background:#f8f5f0;color:#4a3f35;}
+        header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+        .nav{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:2rem;padding:1.5rem;flex-wrap:wrap;}
+        .nav a{text-decoration:none;color:#4a3f35;font-weight:600;transition:0.3s;}
+        .nav a:hover{color:#b89678;}
+        .banner{width:100%;height:400px;background:url(images/blog_banner.png) center/cover no-repeat;display:flex;align-items:center;justify-content:center;color:#fff;}
+        .banner h1{font-size:2.5rem;}
+        .container{max-width:800px;margin:4rem auto;padding:0 1rem;}
+        .blog-content{background:#fff;padding:3rem;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);}
+        .blog-content h2{margin-bottom:2rem;text-align:center;}
+        .blog-content p{line-height:1.8;margin-bottom:1.5rem;font-size:1rem;}
+        footer{background:#4a3f35;color:#fff;text-align:center;padding:2rem;margin-top:4rem;}
+    </style>
 </head>
 <body>
+    <header>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-<!-- 导航 -->
-<nav class="navbar">
-  <a href="index.html" class="logo">AONGAN</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="products.html">Products</a></li>
-    <li><a href="guide.html">Baking Guide</a></li>
-  </ul>
-</nav>
+    <section class="banner">
+        <h1>Blog & Guide</h1>
+    </section>
 
-<!-- 顶部大图横幅 -->
-<section class="about-banner">
-  <div>
-    <h1>About AONGAN</h1>
-    <p>Nature · Health · Eco-Friendly Living</p>
-  </div>
-</section>
-
-<div class="container">
-  <!-- 第一块 品牌故事 图文左右 -->
-  <div class="about-row">
-    <div class="img-wrap">
-      <img src="https://images.unsplash.com/photo-1602523961358-f5f093a445b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Natural Beeswax">
+    <div class="container">
+        <div class="blog-content">
+            <h2>How to Use Beeswax Bread Bags</h2>
+            <p>AONGAN beeswax bread bags are perfect for storing homemade bread, fruits, vegetables and snacks. Made of natural beeswax, they keep food fresh naturally without any harmful chemicals.</p>
+            <p>Reusable and washable, simply hand wash with mild soap and air dry. Replace disposable plastic bags, reduce plastic pollution, and live a healthy eco-friendly life.</p>
+            <p>With three different sizes, you can choose the right one for your daily kitchen storage needs.</p>
+        </div>
     </div>
-    <div class="text-wrap">
-      <h2>Our Story</h2>
-      <p>AONGAN was born from a simple idea: to create safe, natural and reusable food storage tools for every family who loves homemade baking.</p>
-      <p>We are deeply aware of the harm caused by disposable plastic bags to human health and the environment. So we focus on developing premium beeswax bread bags as a perfect plastic-free alternative.</p>
-      <p>From material selection to handmade craft, we stick to high standards to bring healthy and eco-friendly daily necessities to global users.</p>
-    </div>
-  </div>
 
-  <!-- 第二块 原料优势 图文左右反转 -->
-  <div class="about-row">
-    <div class="img-wrap">
-      <img src="https://images.unsplash.com/photo-1589987965490-6fcc5232b450?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Pure Natural Material">
-    </div>
-    <div class="text-wrap">
-      <h2>Pure Natural Material</h2>
-      <p>We only use pure natural beeswax, organic cotton fabric and jojoba oil, without any synthetic chemical additives.</p>
-      <p>The material is safe enough to directly contact bread, fruits and other foods, breathable and fresh-keeping, allowing you to taste the original flavor of food.</p>
-      <p>Every AONGAN beeswax bag is carefully made to balance beauty, practicability and environmental protection.</p>
-    </div>
-  </div>
-
-  <!-- 品牌理念板块 -->
-  <div class="idea-section">
-    <h2>Our Mission & Vision</h2>
-    <p>We hope to let more families stay away from disposable plastic and embrace a low-carbon, green and healthy lifestyle.</p>
-    <p>Not only providing high-quality beeswax bread bags, but also spreading the concept of environmental protection and healthy life to every corner of the world.</p>
-    <p>Choose AONGAN, choose nature, choose a better life for you and the planet.</p>
-  </div>
-</div>
-
-<!-- 页脚 -->
-<footer>
-  <p>Copyright © AONGAN | All Rights Reserved</p>
-  <p>Customer Service: support@aongan.com</p>
-</footer>
-
+    <footer>
+        <p>Email: aongan.beeswax@gmail.com | © 2025 AONGAN All Rights Reserved</p>
+    </footer>
 </body>
 </html>
