@@ -1,120 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us | AONGAN</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f9f7f4;color:#333;line-height:1.8}
-
-/* 导航栏 */
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:1rem 5%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.08);position:sticky;top:0;z-index:99}
-.logo{font-size:1.8rem;font-weight:bold;color:#8b6e4e;text-decoration:none}
-.nav-links{display:flex;list-style:none;gap:2.2rem}
-.nav-links a{color:#555;text-decoration:none;font-weight:500;font-size:1rem}
-.nav-links a.active,.nav-links a:hover{color:#8b6e4e}
-
-/* 顶部Banner */
-.contact-banner{width:100%;height:320px;background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
-url('https://images.unsplash.com/photo-1557425765-3a92b8e79fdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
-display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}
-.contact-banner h1{font-size:2.8rem;margin-bottom:0.5rem;text-shadow:0 2px 6px rgba(0,0,0,0.3)}
-.contact-banner p{font-size:1.1rem;opacity:0.95}
-
-/* 主体容器 */
-.container{max-width:1100px;margin:4rem auto;padding:0 2rem}
-
-/* 联系表单板块 */
-.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;background:#fff;padding:3rem;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.06)}
-
-/* 左侧联系信息 */
-.contact-info h2{font-size:1.8rem;color:#8b6e4e;margin-bottom:1.5rem}
-.contact-info p{margin-bottom:1rem;color:#555;font-size:1.05rem}
-.contact-item{margin-bottom:1.2rem}
-.contact-item strong{color:#8b6e4e}
-
-/* 右侧表单 */
-.form-group{margin-bottom:1.5rem}
-.form-group label{display:block;margin-bottom:0.5rem;color:#555;font-weight:500}
-.form-group input,
-.form-group textarea{width:100%;padding:1rem;border:1px solid #ddd;border-radius:8px;font-size:1rem}
-.form-group textarea{min-height:140px;resize:none}
-.btn{background:#8b6e4e;color:#fff;border:none;padding:1rem 2.5rem;border-radius:8px;font-size:1rem;cursor:pointer}
-.btn:hover{background:#735a3d}
-
-/* 页脚 */
-footer{background:#333;color:#fff;text-align:center;padding:2rem;margin-top:4rem}
-footer p{margin-bottom:0.5rem;opacity:0.9}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AONGAN | Beeswax Bread Bags</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+        body{background:#f8f5f0;color:#4a3f35;}
+        header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+        .nav{max-width:1200px;margin:0 auto;display:flex;justify-content:center;gap:2rem;padding:1.5rem;flex-wrap:wrap;}
+        .nav a{text-decoration:none;color:#4a3f35;font-weight:600;transition:0.3s;}
+        .nav a:hover{color:#b89678;}
+        .banner{width:100%;height:600px;background:url(images/home_banner.png) center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;}
+        .banner-text h1{font-size:2.8rem;margin-bottom:1rem;}
+        .banner-text p{font-size:1.2rem;max-width:700px;padding:0 1rem;}
+        .container{max-width:1200px;margin:6rem auto;padding:0 1rem;}
+        .section-title{text-align:center;font-size:2rem;margin-bottom:3rem;color:#4a3f35;}
+        .advantage-row{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px,1fr));gap:2rem;margin-bottom:4rem;}
+        .card{background:#fff;padding:2rem;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.08);text-align:center;}
+        .card img{width:100%;height:220px;object-fit:cover;border-radius:6px;margin-bottom:1.5rem;}
+        .product-row{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px,1fr));gap:2rem;}
+        .scene-row{display:grid;grid-template-columns:repeat(auto-fit, minmax(400px,1fr));gap:2rem;margin:4rem 0;}
+        footer{background:#4a3f35;color:#fff;text-align:center;padding:2rem;margin-top:4rem;}
+    </style>
 </head>
 <body>
+    <header>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-<!-- 导航 -->
-<nav class="navbar">
-  <a href="index.html" class="logo">AONGAN</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="products.html">Products</a></li>
-    <li><a href="guide.html">Baking Guide</a></li>
-    <li><a href="inbox.html" class="active">Contact</a></li>
-  </ul>
-</nav>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>AONGAN Beeswax Bread Bags</h1>
+            <p>AONGAN makes beeswax bread bags that keep your homemade bread fresh — naturally.</p>
+        </div>
+    </section>
 
-<!-- 顶部横幅 -->
-<section class="contact-banner">
-  <div>
-    <h1>Contact Us</h1>
-    <p>We'd love to hear from you</p>
-  </div>
-</section>
+    <div class="container">
+        <h2 class="section-title">Core Advantages</h2>
+        <div class="advantage-row">
+            <div class="card">
+                <img src="images/home_advantage1.png" alt="Advantage">
+                <h3>Reusable</h3>
+                <p>Durable and washable for long-term daily use.</p>
+            </div>
+            <div class="card">
+                <img src="images/home_advantage2.png" alt="Advantage">
+                <h3>Food Grade</h3>
+                <p>Made of natural materials, safe for food contact.</p>
+            </div>
+            <div class="card">
+                <img src="images/home_advantage3.png" alt="Advantage">
+                <h3>Eco Friendly</h3>
+                <p>Perfect alternative to plastic bags, protect the earth.</p>
+            </div>
+        </div>
 
-<div class="container">
-  <div class="contact-wrap">
-    <!-- 左侧联系信息 -->
-    <div class="contact-info">
-      <h2>Get In Touch</h2>
-      <p>If you have any questions, wholesale inquiry or partnership cooperation, feel free to contact us anytime.</p>
-      
-      <div class="contact-item">
-        <strong>Email:</strong>
-        <p>support@aongan.com</p>
-      </div>
-      <div class="contact-item">
-        <strong>Business Inquiry:</strong>
-        <p>Wholesale & Private Label Available</p>
-      </div>
-      <div class="contact-item">
-        <strong>Service Time:</strong>
-        <p>24 Hours Online Support</p>
-      </div>
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-row">
+            <div class="card">
+                <img src="images/home_product1.png" alt="Bread Bag">
+                <h3>Natural Beeswax Bag</h3>
+            </div>
+            <div class="card">
+                <img src="images/home_product2.png" alt="Bread Bag">
+                <h3>Fresh Keeping Bag</h3>
+            </div>
+        </div>
+
+        <h2 class="section-title">Usage Scenarios</h2>
+        <div class="scene-row">
+            <img src="images/home_scene1.png" alt="Scene" style="width:100%;border-radius:8px;">
+            <img src="images/home_scene2.png" alt="Scene" style="width:100%;border-radius:8px;">
+        </div>
     </div>
 
-    <!-- 右侧留言表单 -->
-    <div class="contact-form">
-      <div class="form-group">
-        <label>Your Name</label>
-        <input type="text" placeholder="Please enter your name">
-      </div>
-      <div class="form-group">
-        <label>Your Email</label>
-        <input type="email" placeholder="Please enter your email">
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea placeholder="Write your message here..."></textarea>
-      </div>
-      <button class="btn">Send Message</button>
-    </div>
-  </div>
-</div>
-
-<!-- 页脚 -->
-<footer>
-  <p>Copyright © AONGAN | All Rights Reserved</p>
-  <p>Customer Service: support@aongan.com</p>
-</footer>
-
+    <footer>
+        <p>Email: aongan.beeswax@gmail.com | © 2025 AONGAN All Rights Reserved</p>
+    </footer>
 </body>
 </html>
